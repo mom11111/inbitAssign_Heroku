@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const router = require('./router/api');
 app.use('/', auth, router);
 
-mongoose.connect('mongodb://localhost:27017/Interview',{useNewUrlParser:true},(err)=>{
+mongoose.connect('mongodb+srv://nis_123:<nishant>@cluster0-zr2jc.mongodb.net/test?retryWrites=true&w=majority,(err)=>{
     if(!err)
         console.log('connection established');
     else
