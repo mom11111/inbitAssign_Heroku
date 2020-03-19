@@ -26,8 +26,8 @@ mongoose.connect('mongodb+srv://nis_123:<nishant>@cluster0-zr2jc.mongodb.net/tes
     else
         console.log("there is error");
 });
-
-app.listen('3000',(res,err)=>{
+const port=process.env.PORT || 3000
+app.listen( port, (res,err)=>{
     if(err){
         console.log("error");
     }
